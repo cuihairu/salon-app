@@ -39,6 +39,9 @@
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-react": "^7.24.7",
     "@babel/runtime": "^7.21.5",
+    "@nutui/icons-react": "^1.0.4",
+    "@nutui/icons-react-taro": "^1.0.4",
+    "@nutui/nutui-react": "^2.6.16",
     "@nutui/nutui-react-taro": "^2.3.0",
     "@tarojs/components": "4.0.4",
     "@tarojs/helper": "4.0.4",
@@ -56,7 +59,8 @@
     "@tarojs/shared": "4.0.4",
     "@tarojs/taro": "4.0.4",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "vite-plugin-imp": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

@@ -1,18 +1,17 @@
 import { View } from '@tarojs/components'
-import { Button } from "@nutui/nutui-react-taro"
 import './index.less'
+import Footer from "../../components/footer/footer";
+
 
 function Index() {
   return (
-    <View className="nutui-react-demo">
-      <View>
-        欢迎使用 NutUI React 开发 Taro 多端项目。
+    <View className="page-container">
+      <View className="content">
+        欢迎来到首页！
       </View>
-      <View>
-        <Button type="primary"> NutUI React Button </Button>
-      </View>
+      <Footer/>
     </View>
   )
 }
 
-export default Index
+export  default Index

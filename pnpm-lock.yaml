@@ -17,6 +17,15 @@ importers:
       '@babel/runtime':
         specifier: ^7.21.5
         version: 7.25.0
+      '@nutui/icons-react':
+        specifier: ^1.0.4
+        version: 1.0.4
+      '@nutui/icons-react-taro':
+        specifier: ^1.0.4
+        version: 1.0.4
+      '@nutui/nutui-react':
+        specifier: ^2.6.16
+        version: 2.6.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nutui/nutui-react-taro':
         specifier: ^2.3.0
         version: 2.6.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -71,6 +80,9 @@ importers:
       react-dom:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
+      vite-plugin-imp:
+        specifier: ^2.4.0
+        version: 2.4.0(vite@4.5.3(@types/node@22.1.0)(less@4.2.0)(sass@1.77.8)(terser@5.31.5))
     devDependencies:
       '@babel/core':
         specifier: ^7.8.0
@@ -1237,8 +1249,16 @@ packages:
   '@nutui/icons-react-taro@1.0.4':
     resolution: {integrity: sha512-2sDhJXJPAgatSg8dSWVYLYVvxCZo2OIWpSzVO0xkyCU0X6pWtKt7Hh26UbT9PTWaTfg9cX9xqwYvBkkxUypvSQ==}
 
+  '@nutui/icons-react@1.0.4':
+    resolution: {integrity: sha512-nLFYpJvMBkKzT+PpfMaYoO6vJXMTM0yxAragTkEHt9HAFNjdTdvByCSRfUazHHdLdr1AJxS9h62VB1+jmBEtWA==}
+
   '@nutui/nutui-react-taro@2.6.16':
     resolution: {integrity: sha512-edVC3dGlmNc/Fm3JQgdmwD3kTYGns5p3fYYbQ+hOh+MbnH29pgZcsPWm14z1EQkn4b0lUC04IiWe1hVUfZK3cw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+
+  '@nutui/nutui-react@2.6.16':
+    resolution: {integrity: sha512-do67NDoe1Mfz8jHC/cvLwtGhoyMfGmdjy5Jesajda+MKtfCuxb3BsPz7fwMCrJmlGlCcwvAU9V3iemzSFUmzzg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
@@ -4898,6 +4918,11 @@ packages:
     resolution: {integrity: sha512-OljLrQ9SQdOUqTaQxqL5dEfZWrXExyyWsozYlAWFawPVNuD83igl7uJD2RTkNMbniIYgt8l81eCJGIdQF7avLQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
+  vite-plugin-imp@2.4.0:
+    resolution: {integrity: sha512-L/6/nvOw+MyNh4UxAlCZHsmKd5MitmHamqqAWB15sbUgVIEz/OQ8jpKr6kkQU0eA/AIe8fkCVbQBlP81ajrqWg==}
+    peerDependencies:
+      vite: '>= 2.0.0-beta.5'
+
   vite-plugin-static-copy@0.17.1:
     resolution: {integrity: sha512-9h3iaVs0bqnqZOM5YHJXGHqdC5VAVlTZ2ARYsuNpzhEJUHmFqXY7dAK4ZFpjEQ4WLFKcaN8yWbczr81n01U4sQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -6245,10 +6270,28 @@ snapshots:
 
   '@nutui/icons-react-taro@1.0.4': {}
 
+  '@nutui/icons-react@1.0.4': {}
+
   '@nutui/nutui-react-taro@2.6.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.25.0
       '@nutui/icons-react-taro': 1.0.4
+      '@nutui/touch-emulator': 1.0.0
+      '@react-spring/web': 9.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@use-gesture/react': 10.2.20(react@18.3.1)
+      async-validator: 4.2.5
+      classnames: 2.5.1
+      lodash.isequal: 4.5.0
+      lodash.kebabcase: 4.1.1
+      react: 18.3.1
+      react-transition-group: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - react-dom
+
+  '@nutui/nutui-react@2.6.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.25.0
+      '@nutui/icons-react': 1.0.4
       '@nutui/touch-emulator': 1.0.0
       '@react-spring/web': 9.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@use-gesture/react': 10.2.20(react@18.3.1)
@@ -10454,6 +10497,19 @@ snapshots:
       spdx-expression-parse: 3.0.1
 
   validate-npm-package-name@5.0.1: {}
+
+  vite-plugin-imp@2.4.0(vite@4.5.3(@types/node@22.1.0)(less@4.2.0)(sass@1.77.8)(terser@5.31.5)):
+    dependencies:
+      '@babel/core': 7.25.2
+      '@babel/generator': 7.25.0
+      '@babel/parser': 7.25.3
+      '@babel/traverse': 7.25.3
+      chalk: 4.1.2
+      param-case: 3.0.4
+      pascal-case: 3.1.2
+      vite: 4.5.3(@types/node@22.1.0)(less@4.2.0)(sass@1.77.8)(terser@5.31.5)
+    transitivePeerDependencies:
+      - supports-color
 
   vite-plugin-static-copy@0.17.1(vite@4.5.3(@types/node@22.1.0)(less@4.2.0)(sass@1.77.8)(terser@5.31.5)):
     dependencies:

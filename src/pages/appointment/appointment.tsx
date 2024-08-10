@@ -1,14 +1,14 @@
 import { View } from '@tarojs/components'
-import './profile.less'
 import Footer from "../../components/footer/footer";
+import './appointment.less'
 
 function Index() {
   return (
     <View className="nutui-react-demo">
       <View>
-        欢迎使用 我的
+        欢迎使用 预约
       </View>
-      <Footer/>
+     <Footer/>
     </View>
   )
 }
