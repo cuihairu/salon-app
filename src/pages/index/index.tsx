@@ -1,7 +1,5 @@
 import { View } from '@tarojs/components'
 import './index.less'
-import Footer from "../../components/footer/footer";
-
 
 function Index() {
   return (
@@ -9,7 +7,6 @@ function Index() {
       <View className="content">
         欢迎来到首页！
       </View>
-      <Footer/>
     </View>
   )
 }

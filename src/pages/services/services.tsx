@@ -1,5 +1,4 @@
 import { View } from '@tarojs/components'
-import Footer from "../../components/footer/footer";
 import './services.less'
 
 function Index() {
@@ -8,7 +7,6 @@ function Index() {
       <View>
         欢迎使用 项目 。
       </View>
-      <Footer />
     </View>
   )
 }

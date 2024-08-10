@@ -24,11 +24,8 @@ dependencies:
     specifier: ^2.6.16
     version: 2.6.16(react-dom@18.3.1)(react@18.3.1)
   '@nutui/nutui-react-taro':
-    specifier: ^2.3.0
+    specifier: ^2.6.16
     version: 2.6.16(react-dom@18.3.1)(react@18.3.1)
-  '@tarojs/binding-darwin-x64':
-    specifier: ^4.0.4
-    version: 4.0.4
   '@tarojs/components':
     specifier: 4.0.4
     version: 4.0.4(@tarojs/helper@4.0.4)(@tarojs/shared@4.0.4)(@types/react@18.3.3)(postcss@8.4.41)(react@18.3.1)
@@ -88,6 +85,9 @@ devDependencies:
   '@babel/core':
     specifier: ^7.8.0
     version: 7.25.2
+  '@tarojs/binding-darwin-x64':
+    specifier: ^4.0.4
+    version: 4.0.4
   '@tarojs/cli':
     specifier: 4.0.4
     version: 4.0.4
@@ -2599,7 +2599,7 @@ packages:
     engines: {node: '>= 18'}
     cpu: [x64]
     os: [darwin]
-    requiresBuild: true
+    dev: true
 
   /@tarojs/binding-linux-x64-gnu@4.0.4:
     resolution: {integrity: sha512-jO6Tz4gS2pJ875c/O9RBZp1ZxA6o+OJ3KhPEXFfQDq+b3yzZ6/ToSOlxMdySpM7kRQhkN6r1knHSQ3UCTqd5Vg==}
@@ -6114,7 +6114,7 @@ packages:
       he: 1.2.0
       param-case: 2.1.1
       relateurl: 0.2.7
-      uglify-js: 3.19.1
+      uglify-js: 3.19.2
     dev: true
 
   /html-tags@3.3.1:
@@ -8857,8 +8857,8 @@ packages:
     hasBin: true
     dev: true
 
-  /uglify-js@3.19.1:
-    resolution: {integrity: sha512-y/2wiW+ceTYR2TSSptAhfnEtpLaQ4Ups5zrjB2d3kuVxHj16j/QJwPl5PvuGy9uARb39J0+iKxcRPvtpsx4A4A==}
+  /uglify-js@3.19.2:
+    resolution: {integrity: sha512-S8KA6DDI47nQXJSi2ctQ629YzwOVs+bQML6DAtvy0wgNdpi+0ySpQK0g2pxBq2xfF2z3YCscu7NNA8nXT9PlIQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     dev: true
