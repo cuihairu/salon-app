@@ -66,6 +66,7 @@
     "@babel/core": "^7.8.0",
     "@tarojs/cli": "4.0.4",
     "@tarojs/test-utils-react": "^0.1.1",
+    "@tarojs/binding-darwin-x64": "^4.0.4",
     "@tarojs/vite-runner": "4.0.4",
     "@types/react": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
