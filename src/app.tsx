@@ -1,10 +1,9 @@
 import { useEffect } from 'react'
 import { useDidShow, useDidHide } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-
-import '@nutui/nutui-react/dist/style.css'
 // 全局样式
 import './app.less'
+import '@nutui/nutui-react-taro/dist/style.css'
 
 function App({ children }) {
   // 可以使用所有的 React Hooks

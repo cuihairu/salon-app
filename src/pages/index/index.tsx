@@ -7,6 +7,7 @@ import ServicesView from '../componets/services/index'
 import AppointmentView from '../componets/appointment/index';
 import ProfileView from '../componets/profile/index';
 
+
 function Index() {
   const [activeView, setActiveView] = useState('home');
 

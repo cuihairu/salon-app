@@ -1,5 +1,5 @@
 import { defineConfig, type UserConfigExport } from '@tarojs/cli'
-import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
+//import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
 import devConfig from './dev'
 import prodConfig from './prod'
 
@@ -17,7 +17,10 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
     },
     sourceRoot: 'src',
     outputRoot: 'dist',
-    plugins: ['@tarojs/plugin-html'],
+    plugins: [
+      //["@tarojs/plugin-framework-react", { reactMode: "concurrent" }],
+      '@tarojs/plugin-html'
+    ],
     defineConstants: {
     },
     copy: {
@@ -35,7 +38,7 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
         pxtransform: {
           enable: true,
           config: {
-            selectorBlackList: ['nut-']
+            selectorBlackList: ['nut-'],
           }
         },
         cssModules: {
@@ -44,7 +47,15 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
             namingPattern: 'module', // 转换模式，取值为 global/module
             generateScopedName: '[name]__[local]___[hash:base64:5]'
           }
-        }
+        },
+        htmltransform: {
+          enable: true,
+          // 设置成 false 表示 不去除 * 相关的选择器区块
+          // 假如开启这个配置，它会把 tailwindcss 整个 css var 的区域块直接去除掉
+          config: {
+            removeCursorStyle: false,
+          },
+        },
       },
     },
     h5: {
