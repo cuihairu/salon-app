@@ -23,4 +23,40 @@
   border-radius: 0 0 20px 20px;
   /* 与容器圆弧形遮掩效果保持一致 */
 }
+.container {
+  padding: 10px;
+  /* 添加内边距 */
+}
+.cell-wrapper {
+  display: flex;
+  flex-direction: row;
+  /* 横向布局 */
+  justify-content: space-between;
+  /* 在行中均匀分布 */
+}
+.cell-item {
+  flex: 1 1 calc(33.333% - 10px);
+  /* 每个 Cell 占据三分之一的宽度，减去间距 */
+  box-sizing: border-box;
+  /* 包括边框和内边距在内的宽度计算 */
+  min-width: 200px;
+  /* 确保每列有最小宽度，以防内容过宽 */
+}
+.nut-cell {
+  display: flex;
+  flex-direction: column;
+  /* 确保标题和内容垂直排列 */
+  justify-content: center;
+  /* 内容水平居中对齐 */
+  align-items: center;
+  /* 内容垂直居中对齐 */
+  padding: 10px;
+  /* 添加内边距 */
+  border: 1px solid #ddd;
+  /* 添加边框 */
+  border-radius: 8px;
+  /* 添加圆角 */
+  background-color: #fff;
+  /* 背景色 */
+}
 /*# sourceMappingURL=index.css.map */
