@@ -24,7 +24,7 @@ function Index() {
   };
 
   return (
-    <View className='page-container'>
+    <View className='components-page'>
       <View className='content'>
         {renderActiveView()}
       </View>

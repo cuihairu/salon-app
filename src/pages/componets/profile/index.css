@@ -1,0 +1,26 @@
+.profile-header {
+  background-image: url('/assets/profile-header.png');
+  /* 替换为你的背景图链接 */
+  background-size: cover;
+  /* 背景图覆盖整个容器 */
+  background-position: center;
+  /* 背景图居中显示 */
+  padding: 10px;
+  /* 添加一些内边距 */
+  border-radius: 0 0 20px 20px;
+  /* 圆弧形遮掩效果 */
+  overflow: hidden;
+  /* 隐藏超出圆角的部分 */
+}
+.flex-wrp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  /* 半透明背景色，增加对比度 */
+  padding: 10px;
+  /* 添加一些内边距 */
+  border-radius: 0 0 20px 20px;
+  /* 与容器圆弧形遮掩效果保持一致 */
+}
+/*# sourceMappingURL=index.css.map */
