@@ -1,8 +1,6 @@
 import { useEffect } from 'react'
 import { useDidShow, useDidHide } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import Footer from "./components/footer/footer";
-
 
 import '@nutui/nutui-react/dist/style.css'
 // 全局样式
@@ -19,10 +17,9 @@ function App({ children }) {
   useDidHide(() => {})
 
   return (
-    <View className="app-container">
+    <View className='app-container'>
       { children }
-      <Footer  />
-      </View>
+    </View>
   );
 }
 
