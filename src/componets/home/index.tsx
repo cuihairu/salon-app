@@ -1,12 +1,10 @@
 import { View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import {useState} from 'react';
-import {Swiper, NoticeBar, Image, Dialog, Grid} from '@nutui/nutui-react-taro';
-import { IconFont } from '@nutui/icons-react-taro'
-import findShop from "@images/shop.svg";
+import {Swiper, NoticeBar, Image, Dialog, Grid, Space,Divider,Toast} from '@nutui/nutui-react-taro';
+import { Star, Book,ShoppingFollow,Store} from '@nutui/icons-react-taro'
 
 const list = [
-  'https://storage.360buyimg.com/jdc-article/NutUItaro34.jpg',
   'https://storage.360buyimg.com/jdc-article/NutUItaro2.jpg',
   'https://storage.360buyimg.com/jdc-article/welcomenutui.jpg',
   'https://storage.360buyimg.com/jdc-article/fristfabu.jpg',
@@ -55,11 +53,58 @@ function Index() {
           </Swiper.Item>
         ))}
       </Swiper>
-      <IconFont name="dongdong" style={{ marginRight: '10px' }} />
       <NoticeBar content={text} />
-      <Image src={findShop} height='20%' width='20%' style={{background: '#F0F0F0'}}  onClick={openStoreList}>
-      </Image>
-
+      <Divider />
+      <Grid columns={2} gap='20px' center direction='horizontal' style={
+        {
+          width: '100%',
+          height: '100%',
+        }
+      }
+      >
+        <Space wrap>
+          <Grid.Item  style={{width:'100%'}} text='查找最近的店'>
+              <Store color='Tan' size='80' style={{ marginRight: '10px' }} onClick={openStoreList}>
+              </Store>
+          </Grid.Item>
+          <Grid.Item style={{width:'100%'}} text='最近的活动'>
+            <ShoppingFollow color='Tan' size='80' style={{ marginRight: '10px' }} onClick={()=>{
+              Toast.show('debug',{
+                title: '最近的活动',
+                content: '更多的活动马上到来',
+                type: 'success',
+                duration: 2,
+                position: 'top',
+                icon: <ShoppingFollow />,
+                lockScroll: true,
+                onClose:()=>{
+                  console.log('close')
+                },
+              })
+            }}
+            >
+            </ShoppingFollow>
+          </Grid.Item>
+          <Grid.Item style={{width:'100%'}} text='养生常识'>
+            <Book color='Tan' size='80' style={{ marginRight: '10px' }} onClick={()=>{
+              Toast.show('debug',{
+                title: '养生常识',
+                content: '更多的常识马上到来',
+                type: 'success',
+                duration: 1,
+                position: 'center',
+                icon: <Book />,
+                lockScroll: true,
+                onClose:()=>{
+                  console.log('close')
+                },
+              })
+            }}
+            >
+            </Book>
+          </Grid.Item>
+        </Space>
+      </Grid>
       <Dialog
         visible={visible}
         title='门面店列表'
