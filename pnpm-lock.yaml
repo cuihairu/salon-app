@@ -18,8 +18,8 @@ importers:
         specifier: ^7.21.5
         version: 7.25.0
       '@nutui/icons-react':
-        specifier: ^1.0.4
-        version: 1.0.4
+        specifier: ^1.0.5
+        version: 1.0.5
       '@nutui/icons-react-taro':
         specifier: ^1.0.4
         version: 1.0.4
@@ -1265,8 +1265,8 @@ packages:
   '@nutui/icons-react-taro@1.0.4':
     resolution: {integrity: sha512-2sDhJXJPAgatSg8dSWVYLYVvxCZo2OIWpSzVO0xkyCU0X6pWtKt7Hh26UbT9PTWaTfg9cX9xqwYvBkkxUypvSQ==}
 
-  '@nutui/icons-react@1.0.4':
-    resolution: {integrity: sha512-nLFYpJvMBkKzT+PpfMaYoO6vJXMTM0yxAragTkEHt9HAFNjdTdvByCSRfUazHHdLdr1AJxS9h62VB1+jmBEtWA==}
+  '@nutui/icons-react@1.0.5':
+    resolution: {integrity: sha512-0TYl3Fk+sVz95DKqn/7isYAvaK5YGnaBwMMib4rqYLoqi9GGFwgU9rp2hYXu/X5IYdWgshj0xiuGMK75/vUYbQ==}
 
   '@nutui/nutui-react-taro@2.6.16':
     resolution: {integrity: sha512-edVC3dGlmNc/Fm3JQgdmwD3kTYGns5p3fYYbQ+hOh+MbnH29pgZcsPWm14z1EQkn4b0lUC04IiWe1hVUfZK3cw==}
@@ -6382,7 +6382,7 @@ snapshots:
 
   '@nutui/icons-react-taro@1.0.4': {}
 
-  '@nutui/icons-react@1.0.4': {}
+  '@nutui/icons-react@1.0.5': {}
 
   '@nutui/nutui-react-taro@2.6.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -6403,7 +6403,7 @@ snapshots:
   '@nutui/nutui-react@2.6.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.25.0
-      '@nutui/icons-react': 1.0.4
+      '@nutui/icons-react': 1.0.5
       '@nutui/touch-emulator': 1.0.0
       '@react-spring/web': 9.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@use-gesture/react': 10.2.20(react@18.3.1)
